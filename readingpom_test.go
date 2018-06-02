@@ -90,7 +90,7 @@ var (
 `)
 )
 
-func TestTamal(t *testing.T) {
+func TestShouldFindExactNumberOfDependenciesInXMLFile(t *testing.T) {
 	deps := dependencies(pomXml)
 
 	const expected = 7
