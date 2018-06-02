@@ -47,7 +47,7 @@ func main() {
 	fileContent, _ := ioutil.ReadAll(xmlFile)
 	deps := dependencies(fileContent)
 
-	for _, x := range deps {
-		fmt.Println(x)
+	for _, dep := range deps {
+		fmt.Println(dep)
 	}
 }
